@@ -14,13 +14,30 @@ struct ContentView: View {
                 .edgesIgnoringSafeArea(.all
                 )
             VStack {
-                Text("Michael Testut")
-                    .foregroundColor(.white)
-                    .bold()
-                .font(Font.custom("PermanentMarker-Regular", size: 40))
-                Text("iOS Developer")
-                    .foregroundColor(.white)
-                    .font(.system(size: 20))
+                Image("_MG_7557 edit")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width:175)
+                    .padding(EdgeInsets(top: 90, leading: 0, bottom: 0, trailing: 0))
+                    .clipShape(Circle())
+                VStack {
+                    Text("Michael Testut")
+                        .foregroundColor(.white)
+                        .bold()
+                        .font(Font.custom("PermanentMarker-Regular", size: 40))
+                    Text("iOS Developer")
+                        .foregroundColor(.white)
+                        .font(.system(size: 20))
+                }  .padding(EdgeInsets(top: -80, leading: 0, bottom: 0, trailing: 0))
+                Divider()
+                ZStack{
+                    RoundedRectangle(cornerRadius: 20)
+                        .frame(height:50)
+                        .foregroundColor(.white)
+                    Text("mike@miketestut.dev")
+                        .font(.body)
+                        .foregroundColor(.black)
+                }
             }
         }
     }
