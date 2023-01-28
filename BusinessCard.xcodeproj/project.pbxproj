@@ -14,6 +14,7 @@
 		E504B28D2983888D00FE55C1 /* BusinessCardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E504B28C2983888D00FE55C1 /* BusinessCardTests.swift */; };
 		E504B2972983888D00FE55C1 /* BusinessCardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E504B2962983888D00FE55C1 /* BusinessCardUITests.swift */; };
 		E504B2992983888D00FE55C1 /* BusinessCardUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E504B2982983888D00FE55C1 /* BusinessCardUITestsLaunchTests.swift */; };
+		E504B2A7298456FB00FE55C1 /* PermanentMarker-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E504B2A6298456FB00FE55C1 /* PermanentMarker-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,8 @@
 		E504B2922983888D00FE55C1 /* BusinessCardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BusinessCardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E504B2962983888D00FE55C1 /* BusinessCardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessCardUITests.swift; sourceTree = "<group>"; };
 		E504B2982983888D00FE55C1 /* BusinessCardUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessCardUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E504B2A6298456FB00FE55C1 /* PermanentMarker-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PermanentMarker-Regular.ttf"; sourceTree = "<group>"; };
+		E504B2A8298458F200FE55C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +97,8 @@
 		E504B27A2983888900FE55C1 /* BusinessCard */ = {
 			isa = PBXGroup;
 			children = (
+				E504B2A8298458F200FE55C1 /* Info.plist */,
+				E504B2A52984569A00FE55C1 /* Fonts */,
 				E504B27B2983888900FE55C1 /* BusinessCardApp.swift */,
 				E504B27D2983888900FE55C1 /* ContentView.swift */,
 				E504B27F2983888C00FE55C1 /* Assets.xcassets */,
@@ -125,6 +130,14 @@
 				E504B2982983888D00FE55C1 /* BusinessCardUITestsLaunchTests.swift */,
 			);
 			path = BusinessCardUITests;
+			sourceTree = "<group>";
+		};
+		E504B2A52984569A00FE55C1 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E504B2A6298456FB00FE55C1 /* PermanentMarker-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E504B2832983888C00FE55C1 /* Preview Assets.xcassets in Resources */,
+				E504B2A7298456FB00FE55C1 /* PermanentMarker-Regular.ttf in Resources */,
 				E504B2802983888C00FE55C1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,6 +434,7 @@
 				DEVELOPMENT_TEAM = J7DPGWFCLW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BusinessCard/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -449,6 +464,7 @@
 				DEVELOPMENT_TEAM = J7DPGWFCLW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BusinessCard/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

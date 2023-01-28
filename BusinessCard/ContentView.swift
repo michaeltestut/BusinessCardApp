@@ -9,18 +9,25 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        ZStack{
+            Color(red: 0.18, green: 0.20, blue: 0.21, opacity: 1.00)
+                .edgesIgnoringSafeArea(.all
+                )
+            VStack {
+                Text("Michael Testut")
+                    .foregroundColor(.white)
+                    .bold()
+                .font(Font.custom("PermanentMarker-Regular", size: 40))
+                Text("iOS Developer")
+                    .foregroundColor(.white)
+                    .font(.system(size: 20))
+            }
         }
-        .padding()
     }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+    
+    struct ContentView_Previews: PreviewProvider {
+        static var previews: some View {
+            ContentView()
+        }
     }
 }
