@@ -20,6 +20,7 @@ struct ContentView: View {
                     .frame(width:175)
                     .padding(EdgeInsets(top: 90, leading: 0, bottom: 0, trailing: 0))
                     .clipShape(Circle())
+                    .overlay(Circle().stroke( Color.white, lineWidth: 3))
                 VStack {
                     Text("Michael Testut")
                         .foregroundColor(.white)
