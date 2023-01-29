@@ -31,14 +31,8 @@ struct ContentView: View {
                         .font(.system(size: 20))
                 }  .padding(EdgeInsets(top: -80, leading: 0, bottom: 0, trailing: 0))
                 Divider()
-                ZStack{
-                    RoundedRectangle(cornerRadius: 20)
-                        .frame(height:50)
-                        .foregroundColor(.white)
-                    Text("mike@miketestut.dev")
-                        .font(.body)
-                        .foregroundColor(.black)
-                }
+                InfoView(image: "mail", text: "mike@miketestut.dev")
+                InfoView(image: "phone", text: "615-491-2240")
             }
         }
     }
@@ -49,3 +43,4 @@ struct ContentView: View {
         }
     }
 }
+
